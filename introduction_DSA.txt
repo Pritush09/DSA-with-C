@@ -1,0 +1,9 @@
+They way we organise the data in the main memory is called data structure.
+-->1. Array 2. Matrices 3. Linked list (Physical Data Structure) 
+      They define how the data is arange in the memory. (arrangement of data in memory)
+-->(stack,queues,trees,graph,hashing) are logical data structure. these define how the
+     data can be used and how the arrangement is and how it should be utilised (Utilisation)
+
+Problem Solving is different then programming as problem solving requires math where there 
+is no loop there are recursions but in programming there are loops which can serves the part 
+for the recurssion
