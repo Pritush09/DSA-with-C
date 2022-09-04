@@ -14,7 +14,7 @@ int main(){
 
     printf("%d",sizeof(p1));
     printf("%d",sizeof(p2));
-    printf("%d",sizeof(p3));
+    printf("%d",sizeof(p3));     // conclusion that the size of the pointer are independent of the data type
     printf("%d",sizeof(p4));
     printf("%d",sizeof(p5));
 }

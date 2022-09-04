@@ -12,3 +12,5 @@ int main(){
     return 0;
 
 }
+
+// &a karne se uska memory dikai deta h kaha pe vo store h 

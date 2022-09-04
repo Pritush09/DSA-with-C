@@ -20,3 +20,5 @@ int main(){
     //when we use dynamic memory aloocation we need to release the memory 
     free(p);
 }
+
+//the last part is needed for the large programs not for trhe programs which we are doing as a students fee( ) thing 
