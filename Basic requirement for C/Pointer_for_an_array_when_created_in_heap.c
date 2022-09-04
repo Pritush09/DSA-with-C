@@ -16,4 +16,7 @@ int main(){
     for (int j=0;j<5;j++){
         printf("%d ",p[j]);// p is a pointer which act as an array
     }
+
+    //when we use dynamic memory aloocation we need to release the memory 
+    free(p);
 }
