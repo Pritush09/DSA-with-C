@@ -5,7 +5,7 @@ int swap(int x,int y){
     temp = x;
     x = y;
     y = temp;
-    return x,y;
+    //return x,y;
 }
 
 // we can sewe that the passing by value is not good option here for swaping
@@ -15,6 +15,7 @@ int main(){
     int m;
     m = 5;
     s= 2;
-    s,m = swap(s,m);
+    swap(s,m);
     printf("%d , %d",s,m);
 }
+// the output of this code will not be the desierd one
