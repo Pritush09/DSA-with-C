@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+
+//we can also change the value for the given data using function
 int fun(int A[],int n){
     int i;
     for(i=0;i<n;i++){
