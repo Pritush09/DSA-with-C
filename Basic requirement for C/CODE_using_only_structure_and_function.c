@@ -25,4 +25,4 @@ int main(){
     change_lenght(&r,15);
     area(r);
     printf("All task completed smoothly");
-}
+}-
