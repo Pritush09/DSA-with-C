@@ -1,5 +1,8 @@
 #include<stdio.h>
 // O(n2) max time and if the array is already sorted then O(n)
+// Adaptive by us
+// it is also stable
+
 int swap(int *x,int *y){
     int temp;
     temp = *x;
