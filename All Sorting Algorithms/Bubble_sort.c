@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+// O(n2) max time and if the array is already sorted then O(n)
 int swap(int *x,int *y){
     int temp;
     temp = *x;
