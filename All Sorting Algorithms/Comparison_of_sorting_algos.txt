@@ -1,0 +1,6 @@
+Comparisons for th sorting algos are done on the baisis of the following
+-> Number of Comparisions
+-> Number of Swaps
+-> Adaptive (if the array is already sorted then it is able to recognise it or not )
+-> Stable (if 2 or 3 elements are same then the first occurance of the element should come first )
+-> Extra memory or not                                                  
