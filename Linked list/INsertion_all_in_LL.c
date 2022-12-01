@@ -28,12 +28,9 @@ void create(){
     insert_begining(n);
 }
 
-void insert_at_a_given_location(struct node *ti){
-    int pos,i;
-
+void insert_after_a_given_location(struct node *ti,int pos){
+    int i;
     struct node *p=first;
-    printf("\nEnter the location u want to insert : ");
-    scanf("%d",&pos);
     for(i=0;i<pos-1;i++){
         p=p->next;
     }
@@ -44,12 +41,27 @@ void insert_at_a_given_location(struct node *ti){
 }
 
 
+void insert_end(struct node *tp){
+    int c=0,i;
+    struct node *t=first,*pt=first;
+    while(t!=NULL){
+        c++;
+        t=t->next;
+    }
+    for(i=0;i<c-1;i++){
+        pt=pt->next;
+    }
+    tp->next=pt->next;
+    pt->next=tp;
+}
+
+
 int main(){
-    int ch,d;
+    int ch,d,pos;
     struct node *i;
     create();
     while(1){
-        printf("\nENTER YOUR CHOICE\n1 - Insert at begining\n2 - Insert at end \n3 - Insert at a given location\n4 - Display\n5 - exit \n");
+        printf("\nENTER YOUR CHOICE\n1 - Insert at begining\n2 - Insert at end \n3 - Insert after a given location\n4 - Display\n5 - exit \n");
         scanf("%d",&ch);
         switch(ch){
             case 1:
@@ -59,13 +71,24 @@ int main(){
                 i->data = d;
                 insert_begining(i);
                 break;
-
-            case 3:
+            
+            case 2:
                 i = (struct node *)malloc(sizeof(struct node));
                 printf("\nEnter the data u want to insert : ");
                 scanf("%d",&d);
                 i->data = d;
-                insert_at_a_given_location(i);
+                insert_end(i);
+                break;
+
+
+            case 3:
+                i = (struct node *)malloc(sizeof(struct node));
+                printf("\nEnter the location after which u want to insert : ");
+                scanf("%d",&pos);
+                printf("\nEnter the data u want to insert : ");
+                scanf("%d",&d);
+                i->data = d;
+                insert_after_a_given_location(i,pos);
                 break;
 
 
