@@ -28,6 +28,21 @@ void create(){
     insert_begining(n);
 }
 
+void insert_at_a_given_location(struct node *ti){
+    int pos,i;
+
+    struct node *p=first;
+    printf("\nEnter the location u want to insert : ");
+    scanf("%d",&pos);
+    for(i=0;i<pos-1;i++){
+        p=p->next;
+    }
+    ti->next=p->next;
+    p->next=ti;
+    
+
+}
+
 
 int main(){
     int ch,d;
@@ -44,6 +59,16 @@ int main(){
                 i->data = d;
                 insert_begining(i);
                 break;
+
+            case 3:
+                i = (struct node *)malloc(sizeof(struct node));
+                printf("\nEnter the data u want to insert : ");
+                scanf("%d",&d);
+                i->data = d;
+                insert_at_a_given_location(i);
+                break;
+
+
             case 4:
                 display(first);
                 break;
