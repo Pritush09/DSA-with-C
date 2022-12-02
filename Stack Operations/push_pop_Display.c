@@ -16,7 +16,7 @@ void push(int n){
 
 int pop(){
     int m;
-    if(top==0){
+    if(top==-1){
         printf("Stack Underflow");
         return -1;
     }
