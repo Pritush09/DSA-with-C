@@ -3,6 +3,8 @@
 // we assume that the first element is already sorted then we will just pick the next element and inisert in the place of first
 // in this we will not get anything usefull int the intemideate of insertion algorithim
 // we insert the element from position 1 as first is allready assumed to be sorted
+//Adaptive as it will not goin while loop unless and untill the conditionis satisfied
+// Stable also
   
 int insertion_sort(int A[],int n){
     int x;
