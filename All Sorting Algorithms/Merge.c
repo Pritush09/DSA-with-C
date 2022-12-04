@@ -16,6 +16,11 @@ int merge(int A[],int M[],int a,int m){
             j++;
             mn++;
         }
+        else{
+            k[mn]=A[j];
+            j++;
+            mn++;
+        }
     }
     while (i<m){
         k[mn]=M[i];
@@ -30,7 +35,7 @@ int merge(int A[],int M[],int a,int m){
 }
 
 int main(){
-    int a[3]={1,2,3};
+    int a[3]={1,3,4};
     int m[3]={4,5,6};
     merge(a,m,3,3);
     for (int i =0;i<mn;i++){
