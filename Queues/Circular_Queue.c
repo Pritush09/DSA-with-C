@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-int arr[3];
+#define max 3
+int arr[max];
 int f=-1,r=-1;
 
 
